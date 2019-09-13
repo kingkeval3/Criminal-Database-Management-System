@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>PRISONER DETAILS</title>
+</head>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+</style>
+
+<body background="C:\Eclipse\project\WebContent\images\j1.jpg">
+
+<div>
+<h1 style="color:black;">REGISTER PRISONER:</h1>
+<form name="Form1"  method="post" action="fir_reg">
+
+
+
+
+
+   <label for="pid" style="color:black;"><b>PRISONER ID:</b></label>
+    <input type="text" id="pid" name="pid" placeholder="Enter Prisoner ID">
+    <br><br>
+    
+    <label for="cid" style="color:black;"><b>PRISONER NAME:</b></label>
+    <input type="text" id="cid" name="cid" placeholder="Enter Prisoner name">
+    <br><br>
+    
+  <label for="ct" style="color:black;"><b>CRIME TYPE:</b></label>
+ <input type="text" id="ct" name="ct" placeholder="Enter Crime Type...">
+ <br><br>
+ 
+ <B>COURT_ID:</B>
+<select name="court_id" size="1">
+<option value="C1">Local Court:C1  </option>
+<option value="C2">Districts & Sessions Court:C2   </option>
+<option value="C3">High Court:C3  </option>
+<option value="C4">Supreme Court:C4  </option>
+
+</select>
+<br><br>
+    
+ <label for="le" style="color:black;"><b>LAW ENFORCED:</b></label>
+ <input type="text" id="le" name="le" placeholder="Enter the Judgement given by court...">
+ <br><br>
+
+
+    
+ <B>PRISONERS_JAIL_ID:</B>
+<select name="pjid" size="1">
+<option value="J1">Central Jail:J1 </option>
+<option value="J2">District Jail:J2</option>
+<option value="J3">Sub Jail:J3</option>
+<option value="J4">Women's Jail:J4</option>
+<option value="J5">Open Jail:J5</option>
+<option value="J6">Juvenile Jail:J6</option>
+<option value="J7">Special Jail:J7</option>
+<option value="J8">Other Jail:J8</option>
+
+</select>
+<br><br>
+
+<center>
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<h2><a href="jail_report.html"><b>GO BACK</b></a></h2>
+
+</body>
+</html>

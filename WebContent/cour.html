@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Justice Department</title>
+</head>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid brown;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: brown;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+h1{
+
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+
+</style>
+
+<body background="C:\Eclipse\project\WebContent\images\b2.jpg">
+
+<div>
+<h1 style="color:red;">JUDGEMENT DETAILS:</h1>
+<form name="Form1"  method="post" action="court">
+
+<B>COURT_TYPE:</B>
+<select name="court_type" size="1">
+<option value="Local court">Local Court</option>
+<option value="District & Sessions court">District & Sessions court</option>
+<option value="High Court">High Court</option>
+<option value="Supreme Court">Supreme Court</option>
+
+</select>
+<br><br>
+
+ <label for="court_id" style="color:black;"><b>COURT SESSION ID:</b></label>
+    <input type="text" id="Court_id" name="court_id" placeholder="ENTER COURT ID">
+    <br><br>
+
+
+
+ <label for="victim_id" style="color:black;"><b>VICTIM ID:</b></label>
+    <input type="text" id="victim_id" name="victim_id" placeholder="ENTER VICTIM ID">
+    <br><br>
+
+<label for="accused_id" style="color:black;"><b>ACCUSSED ID:</b></label>
+ <input type="text" id="accused_id" name="accused_id" placeholder="ENTER ACCUSED ID...">
+ <br><br>
+ 
+ <label for="fir_id" style="color:black;"><b>FIR ID:</b></label>
+ <input type="text" id="fir_id" name="fir_id" placeholder="ENTER FIR ID:...">
+ <br><br>
+ 
+ <label for="law_enf" style="color:black;"><b>LAW ENFORCED:</b></label>
+ <input type="text" id="law_enf" name="law_enf" placeholder="Enter the Judgement given by court...">
+ <br><br>
+
+
+<center>
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<h2><a href="court_report.html"><b>GO BACK</b></a></h2>
+
+</body>
+</html>

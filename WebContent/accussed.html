@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Accused Details</title>
+</head>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+div {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+}
+h1{
+
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+</style>
+
+<body background="C:\Eclipse\project\WebContent\images\a1.jpg">
+
+<div>
+<h1 style="color: red;">ACCUSED REPORT:</h1>
+<form name="Form1"  method="post" action="accussed">
+
+ <label for="accused_id" style="color:black;"><b>ACCUSED ID:</b></label>
+    <input type="text" id="accused_id" name="accused_id" placeholder="Enter Accused ID">
+    <br><br>
+
+<label for="accused_name" style="color:black;"><b>ACCUSED NAME:</b></label>
+ <input type="text" id="accused_name" name="accused_name" placeholder="Enter name of the Accused...">
+ <br><br>
+ 
+ <label for="accused_address" style="color:black;"><b>ACCUSED ADDRESS:</b></label>
+ <input type="text" id="accused_address" name="accused_address" placeholder="Enter address of Accused...">
+ <br><br>
+ 
+ 
+
+
+
+<center>
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<h2><a href="crime_report.html"><b>GO BACK</b></a></h2>
+
+</body>
+</html>

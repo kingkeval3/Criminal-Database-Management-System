@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Victim Details</title>
+</head>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+div {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+</style>
+
+<body background="C:\Eclipse\project\WebContent\images\v1.jpg">
+
+<div>
+<h1 style="color: green;">VICTIM REPORT:</h1>
+<form name="Form1"  method="post" action="vic">
+
+ <label for="victim_id" style="color:black;"><b>VICTIM ID:</b></label>
+    <input type="text" id="victim_id" name="victim_id" placeholder="Enter Victim ID">
+    <br><br>
+
+<label for="victim_name" style="color:black;"><b>VICTIM'S NAME:</b></label>
+ <input type="text" id="victim_name" name="victim_name" placeholder="Enter Victim's name...">
+ <br><br>
+ 
+ <label for="victim_address" style="color:black;"><b>VICTIM'S ADDRESS:</b></label>
+ <input type="text" id="victim_address" name="victim_address" placeholder="Enter Victim's address...">
+ <br><br>
+ 
+ 
+
+
+
+<center>
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<h2><a href="crime_report.html"><b>GO BACK</b></a></h2>
+
+</body>
+</html>

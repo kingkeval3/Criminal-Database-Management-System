@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>PRISON DETAILS</title>
+</head>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+h1{
+
+text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+}
+
+</style>
+
+<body background="C:\Eclipse\project\WebContent\images\x7.jpg">
+
+<div>
+<h1 style="color:black;">JAIL REPORT:</h1>
+<form name="Form1"  method="post" action="jail">
+
+
+
+<B>JAIL TYPE:</B>
+<select name="jail_type" size="1">
+<option value="Central Jail">Central Jail</option>
+<option value="District Jail">District Jail</option>
+<option value="Sub Jail">Sub Jail</option>
+<option value="Women's Jail">Women's Jail</option>
+<option value="Open Jail">Open Jail</option>
+<option value="Juvenile Jail">Juvenile Jail</option>
+<option value="Special Jail">Special Jail</option>
+<option value="Other Jail">Other Jail</option>
+</select>
+<br><br>
+
+
+<label for="jail_id" style="color:black;"><b>Prisoner Jail ID:</b></label>
+    <input type="text" id="jail_id" name="jail_id" placeholder="Enter Jail ID">
+    <br><br> 
+    
+
+
+   
+    
+    
+<label for="jail_name" style="color:black;"><b>JAIL NAME:</b></label>
+    <input type="text" id="jail_name" name="jail_name" placeholder="Enter name of the Prison">
+    <br><br> 
+    
+    <label for="jail_loc" style="color:black;"><b>JAIL LOCATION:</b></label>
+    <input type="text" id="jail_loc" name="jail_loc" placeholder="Enter Prison's Location">
+    <br><br> 
+
+<center>
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<h2><a href="jail_report.html"><b>GO BACK</b></a></h2>
+
+</body>
+</html>
